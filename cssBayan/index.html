@@ -4,7 +4,108 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <style>
+      header {
+        font-weight: bold;
+        width: 450px;
+        margin: 20px auto 20px auto;
+        font-size: 1.2em;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+      }
+      .ba-container {
+        width: 450px;
+        margin: 20px auto 20px auto;
+      }
+      label {
+        margin: 10px auto 10px auto;
+        padding: 10px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+      label:hover {
+        color: blue;
+      }
+      .content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+      }
+      input[type="checkbox"]:checked + label + .content {
+        max-height: 1000px;
+      }
+      input[type="checkbox"].hidden {
+        opacity: 0;
+      }
+      .image_meme {
+        width: 35%;
+        background-color: beige;
+        align-items: center;
+      }
+      .image_meme:hover {
+        background-color: aquamarine;
+      }
+    </style>
+    <title>CSS Bayan</title>
   </head>
-  <body></body>
+  <body>
+    <header>CSS Bayan</header>
+    <section class="ba-container">
+      <div>
+        <input id="item1" name="bayan" type="checkbox" checked class="hidden" />
+        <label for="item1">Возьмите джуном</label>
+        <div class="content">
+          <img
+            class="image_meme"
+            src="C:\RSS\cssBayan\image\junior-russian.svg"
+            alt="Junior"
+          />
+        </div>
+      </div>
+      <div>
+        <input id="item2" name="bayan" type="checkbox" checked class="hidden" />
+        <label for="item2">Error</label>
+        <div class="content">
+          <img
+            class="image_meme"
+            src="C:\RSS\cssBayan\image\error.svg"
+            alt="error"
+          />
+        </div>
+      </div>
+      <div>
+        <input id="item3" name="bayan" type="checkbox" checked class="hidden" />
+        <label for="item3">WTF</label>
+        <div class="content">
+          <img
+            class="image_meme"
+            src="C:\RSS\cssBayan\image\wtf.svg"
+            alt="Wtf"
+          />
+        </div>
+      </div>
+      <div>
+        <input id="item4" name="bayan" type="checkbox" checked class="hidden" />
+        <label for="item4">"Это не БАГ, это — фича"</label>
+        <div class="content">
+          <img
+            class="image_meme"
+            src="C:\RSS\cssBayan\image\not-a-bug-russian.svg"
+            alt="Not a bug"
+          />
+        </div>
+      </div>
+      <div>
+        <input id="item5" name="bayan" type="checkbox" checked class="hidden" />
+        <label for="item5">Thanks</label>
+        <div class="content">
+          <img
+            class="image_meme"
+            src="C:\RSS\cssBayan\image\thanks.svg"
+            alt="Thanks"
+          />
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
