@@ -5,31 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
+      body {
+        background-image: linear-gradient(to top, #020d28 30%, #5c0186 100%);
+      }
+      section {
+        background-color: beige;
+        border-radius: 14px;
+      }
       header {
         font-weight: bold;
-        width: 450px;
+        width: 62%;
         margin: 20px auto 20px auto;
-        font-size: 1.2em;
+        font-size: 2em;
         font-family: Arial, Helvetica, sans-serif;
         text-align: center;
+        color: #fff;
       }
       .ba-container {
-        width: 450px;
+        width: 62%;
         margin: 20px auto 20px auto;
       }
       label {
         margin: 10px auto 10px auto;
-        padding: 10px;
+        padding: 20px 20px 20px 20px;
         cursor: pointer;
         font-weight: bold;
+        font-size: 1.3em;
+        font-family: Arial, Helvetica, sans-serif;
       }
       label:hover {
         color: blue;
+      }
+      label[for="item1"]::after {
+        content: url("C:\RSS\cssBayan\image\icon\expand-button.png");
+        margin-right: 10px;
       }
       .content {
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s ease;
+        align-items: center;
       }
       input[type="checkbox"]:checked + label + .content {
         max-height: 1000px;
@@ -44,6 +59,10 @@
       }
       .image_meme:hover {
         background-color: aquamarine;
+      }
+      footer {
+        text-align: center;
+        color: #fff;
       }
     </style>
     <title>CSS Bayan</title>
@@ -63,7 +82,7 @@
         </div>
       </div>
       <div>
-        <input id="item2" name="bayan" type="checkbox" checked class="hidden" />
+        <input id="item2" name="bayan" type="checkbox" class="hidden" />
         <label for="item2">Error</label>
         <div class="content">
           <img
@@ -74,7 +93,7 @@
         </div>
       </div>
       <div>
-        <input id="item3" name="bayan" type="checkbox" checked class="hidden" />
+        <input id="item3" name="bayan" type="checkbox" class="hidden" />
         <label for="item3">WTF</label>
         <div class="content">
           <img
@@ -85,7 +104,7 @@
         </div>
       </div>
       <div>
-        <input id="item4" name="bayan" type="checkbox" checked class="hidden" />
+        <input id="item4" name="bayan" type="checkbox" class="hidden" />
         <label for="item4">"Это не БАГ, это — фича"</label>
         <div class="content">
           <img
@@ -96,7 +115,7 @@
         </div>
       </div>
       <div>
-        <input id="item5" name="bayan" type="checkbox" checked class="hidden" />
+        <input id="item5" name="bayan" type="checkbox" class="hidden" />
         <label for="item5">Thanks</label>
         <div class="content">
           <img
@@ -107,5 +126,8 @@
         </div>
       </div>
     </section>
+    <footer>
+      <p>© 2023 Made just for RSS</p>
+    </footer>
   </body>
 </html>
